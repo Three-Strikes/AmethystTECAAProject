@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>💜 Welcome to Amethyst! on Documentação de Projeto</title>
+    <link>http://localhost:11809/amethyst/pt/</link>
+    <description>Recent content in 💜 Welcome to Amethyst! on Documentação de Projeto</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-PT</language>
+    <atom:link href="http://localhost:11809/amethyst/pt/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Editar conteúdo</title>
+      <link>http://localhost:11809/amethyst/pt/tecaa/editingcontent/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:11809/amethyst/pt/tecaa/editingcontent/</guid>
+      <description>Visão geral&#xD;#&#xD;Num website com tema Amethyst, cada página designa-se também por nota. Cada nota é controlada por um único ficheiro Markdown. Para personalizar o seu website, pode adicionar, editar ou eliminar os ficheiros respetivos às notas que pretende.&#xA;[!warning]- Não edite o código HTML&#xA;Amethyst opera através do sofware Hugo, que remove a necessidade de saber desenvolver em HTML para criar websites de páginas estáticas.&#xA;Como tal, não é recomendado que edite estes ficheiros diretamente.</description>
+    </item>
+    <item>
+      <title>Personalização</title>
+      <link>http://localhost:11809/amethyst/pt/tecaa/customization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:11809/amethyst/pt/tecaa/customization/</guid>
+      <description>Personalize o seu website amethyst&#xD;#&#xD;O Amethyst oferece amplas opções de personalização para adaptar o seu website de acordo com as suas preferências. Você pode configurar vários aspectos do seu website para alcançar a aparência e funcionalidade desejadas. O objetivo desta página é permitir-lhe personalizar ainda mais o Amethyst e melhorar a experiência do seu website sem esforço.&#xA;Configuração&#xD;#&#xD;Personalize cada detalhe: Com o Amethyst, é possível personalizar o seu website de forma simplificada.</description>
+    </item>
+    <item>
+      <title>Dar host ao Ametista na Internet</title>
+      <link>http://localhost:11809/amethyst/pt/tecaa/deployingwebsite/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:11809/amethyst/pt/tecaa/deployingwebsite/</guid>
+      <description>Implementar?&#xD;#&#xD;Implementar um site significa torná-lo disponível para o mundo, utilizando a Internet. Isto significa que qualquer pessoa que conheça o endereço do site (ou URL) pode ver as notas publicadas no website, e isto inclui o seu conteúdo.&#xA;È uma prática útil se pretender compartilhar os conteúdos escritos com os teus amigos ou colegas. Este tema foi projetado para ser facilmente implementado, principalmente nas páginas do GitHub.</description>
+    </item>
+  </channel>
+</rss>
