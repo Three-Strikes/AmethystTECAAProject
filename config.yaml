@@ -1,4 +1,4 @@
-baseURL: https://amethyst.bencuan.me
+baseURL: "https://three-strikes.github.io/amethyst/"
 
 # Book configuration
 disablePathToLower: true
@@ -38,7 +38,6 @@ languages:
     title: Documentação de Projeto
     weight: 2
 
-
 # Sidebar menu additional links
 menu:
   # before:
@@ -51,7 +50,6 @@ menu:
       weight: 99
 
 params:
-
   name: Ben Cuan
   title: 📓 Amethyst
 
@@ -101,10 +99,8 @@ params:
     operandIndexId: "REPLACE-WITH-YOUR-OPERAND-INDEX-ID"
 
   # Site description and title
-  description:
-    Notes, hosted by bencuan
+  description: Notes, hosted by bencuan
 
-  
   # Footer links
   links:
     - link_name: Website
@@ -150,7 +146,6 @@ params:
   # - In git information
   # - In blog posts
   BookDateFormat: "January 2, 2006"
-
 
   # (Optional, default true) Enables comments template on pages
   # By default partals/docs/comments.html includes Disqus template
