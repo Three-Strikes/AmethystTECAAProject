@@ -37,3 +37,5 @@ jobs:
           publish_dir: ./public
           publish_branch: deploy # deploying branch
           cname: three-strikes.github.io/amethyst
+    permissions:
+      contents: write
