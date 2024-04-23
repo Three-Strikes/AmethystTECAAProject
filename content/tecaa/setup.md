@@ -19,7 +19,7 @@ Welcome to the guide on setting up your technical documentation site using Hugo,
 ## Getting Started
 
 ### Installing Hugo
-1. First, you will need to ensure that your system meets the requirements for running Hugo projects. You can install Hugo using one of the following methods:
+* First, you will need to ensure that your system meets the requirements for running Hugo projects. You can install Hugo using one of the following methods:
 {{< tabs "preview" >}}
 {{< tab "Installing via Package Manager" >}} 
 - [macOS (Homebrew)](https://gohugo.io/installation/macos/):
@@ -41,7 +41,7 @@ Alternatively, you can download the appropriate binary for your operating system
 {{< /tab >}}
 {{< /tabs >}}
 
-2. Once installed, verify the installation by running:
+* Once installed, verify the installation by running:
 ```bash
 hugo version
 ```
@@ -51,20 +51,50 @@ Setting up an Amethyst project requires a basic understanding of `git`. If you a
 #### 1. Forking
 > A fork is a copy of a repository. Forking a repository allows you to freely experiment with changes without affecting the original project.
 
-Navigate to the GitHub repository for the Amethyst project:
+* Navigate to the GitHub repository for the Amethyst project:
 
 [Amethyst Repository](https://github.com/64bitpandas/amethyst)
 
-Then, Fork the repository into your own GitHub account. If you don't have an account, you can make on for free [here](https://github.com/join). More details about forking a repo can be found on [GitHub's documentation](https://docs.github.com/en/get-started/quickstart/fork-a-repo).
+* Then, Fork the repository into your own GitHub account. If you don't have an account, you can make on for free [here](https://github.com/join). More details about forking a repo can be found on [GitHub's documentation](https://docs.github.com/en/get-started/quickstart/fork-a-repo).
+
+![forking the Amethyst repository](/images/fork_github_amethyst.png)
+*Location of the fork button on the GitHub repository*
+![forking the Amethyst repository](/images/fork_2_github_amethyst.png)
+*Create a new fork repository menu*
 
 #### 2. Cloning
-> Cloning a repository involves creating a local copy of an online repository onto your own machine. This process allows you to work with the repository's files and history directly on your local system. Cloning is particularly useful for collaborating on projects, as it enables contributors to make changes, experiment, and contribute back to the original project without altering the master copy.
+> Cloning a repository involves creating a local copy of an online repository onto your own machine. This process allows you to work with the repository's files and history directly on your local system. <br>
+> Cloning is particularly useful for collaborating on projects, as it enables contributors to make changes, experiment, and contribute back to the original project without altering the master copy.
 
-After you've made a fork of the repository, you need to download the files locally onto your machine. Ensure you have `git`, then type the following command replacing `YOUR-USERNAME` with your GitHub username.
+* After you've made a fork of the repository, you need to download the files locally onto your machine. 
+
+{{< tabs "cloning" >}}
+{{< tab "Clone using the web URL" >}}
+First, ensure that you have `git` installed in your machine (if you don't know how to do this, check this [link](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)). <br>
+Then, type the following command into the command line interpreter located in your desired directory, replacing `YOUR-USERNAME` with your GitHub username.
 
 ```shell
-git clone https://github.com/YOUR-USERNAME/amethyst
+git clone https://github.com/YOUR-USERNAME/amethyst.git
 ```
+{{< /tab >}}
+{{< tab "Clone using the GitHub desktop app">}}
+GitHub Desktop provides a user-friendly interface for managing your Git repositories. Follow these steps to clone a repository using GitHub Desktop:
+
+1. **Download GitHub Desktop:**
+If you haven't already, download and install the GitHub Desktop app from [desktop.github.com](https://desktop.github.com/).
+2. **Launch GitHub Desktop and sign in to your GitHub account**
+3. **Clone the Repository:**
+* Click the button to start the cloning process.
+![Cloning the forked Amethyst repository](/images/github_clone_forked.png)
+*Location of the clone button for the forked repository*
+![Cloning the forked Amethyst repository](/images/github_clone_forked_2.png)
+*Location of the clone button for the forked repository via the GitHub Desktop app*
+* In the GitHub Desktop, select the local path where you want the repository to be downloaded. GitHub Desktop will then complete the cloning process for you.
+{{< /tab >}}
+{{< /tabs >}}
+
+#### 3. Open the Cloned Repository
+* Once the cloning process is complete, you can open the repository and start working with its files, in your preferred code editor (for example, the [Visual Studio Code software](https://code.visualstudio.com/download)).
 
 ## Next steps
 Great! Now you have everything you need to start editing. If you're ready to start writing content already, check out the recommended flow for editing notes:
@@ -80,16 +110,16 @@ This page was created by Pedro Paulo (Nº 1220496), a Master Student in Informat
 This website was a project created for the TECAA course unit.
 
 #### Development process
-This page aims to guide users through the setup process of a Hugo website featuring the Amethyst theme. The content has been curated by summarizing the essential steps outlined in the [Editing Content](https://amethyst.bencuan.me/setup/setup/) pages of the official Amethyst documentation, supplemented with additional relevant information to serve the intended purpose effectively.
+This page aims to guide users through the setup process of a Hugo website featuring the Amethyst theme. The content in this web page is a summarized version of the steps outlined in the [Setup](https://amethyst.bencuan.me/setup/setup/) page of the official Amethyst documentation, supplemented with additional relevant information to serve the intended purpose effectively.
 
-Below is a summary of the individual decisions used in this page, regarding each feature.
+A summary of the individual decisions used in this page, is presented bellow:
 
 {{< tabs "feature-summary" >}}
 {{< tab "Text, headings and links" >}} 
 
 #### Text
 
-_No individual decisions needed to be made in relation to the text._
+_No individual decisions were made._
 <br>
 Following group decisions: 
 
@@ -107,10 +137,7 @@ Special attention was given so that:
 
 #### Links
 
-**Individual decision:** Do not use the styled buttons provided by Amethyst to provide links.<br>
-
-* **Reason:** These buttons are designed to be a more appelative way to show links to the user. However, buttons can also be used to trigger various actions in dynamic websites, instead of being links to other pages. These two distinct usages of buttons may create confusion to the reader, so it was decided that links to other pages are conveyed solely by using the simple Markdown links.
-
+**Individual decision:** Links to other pages are conveyed solely by using the simple Markdown links.<br>
 Group decisions regarding links were followed.
 
 {{< /tab >}}
@@ -118,26 +145,20 @@ Group decisions regarding links were followed.
 
 #### Callouts
 
-**Individual decision:** Foldable Callouts were used to give the reader additional warnings or recommendations whenever necessary, as their colorful styles are a very effective way to pull the user's attention. All three callouts start out closed:
-
-* The warning callout starts closed so that all emphasis is given to the warning title. Afterwards, if the user wants to understand the warning, they can open the callout.
-* The two additional content callouts start closed due to their optional nature. Being closed, they do not clutter the page's content, and the user can still open them and read the contents if interested.
+**Individual decision:** Foldable Callouts were used to give the reader additional informations whenever necessary, as their colorful styles are a very effective way to pull the user's attention.
 
 {{< /tab >}}
 {{< tab "Columns" >}} 
 
 #### Columns
-**Individual decision:** The Columns feature, provided by the Amethyst theme, was used in this page to display to the reader two images side by side. 
+**Individual decision:** The Columns feature, provided by the Amethyst theme, was used in this page to succinctly present essential information. The primary objective behind this choice is to condense the length of the section, as it mainly covers introductory topics that are auxillary to the purpose of the page. By structuring the content in columns, we aim to streamline the reading experience for users, allowing them to quickly grasp the key points without being overwhelmed by excessive detail.
 
-* **Reason:** The paths descriptions in the **Folder Structure** instructions section may be difficult to understand at first for a less experinced user. To mitigate this, the objective was to present the reader with two images that together show the structure of an Amethyst Hugo project. As such, the Columns feature that allows the user to visualize both images side by side and compare both was considered to be an ideal solution.
 {{< /tab >}}
 {{< tab "Tabs" >}} 
 
 #### Tabs
 
-**Individual decision:** The Tabs feature was used to show two sets of alternative steps that the user can follow to preview their changes, depending on their decision to integrate Amethyst with Obsidian Vaults or not. 
-
-* **Reason:** This is a typical use case for tabs, since it conveys to the user that they just have to choose one of the options, not follow both.
+**Individual decision:** The Tabs feature was implemented to present two distinct sets of alternative steps for users, offering options for both the installation of Hugo and the download of the Amethyst project. This use of tabs effectively communicates to users that they need only select one of the provided options, rather than following both simultaneously. 
 {{< /tab >}}
 
 {{< tab "Expand" >}} 

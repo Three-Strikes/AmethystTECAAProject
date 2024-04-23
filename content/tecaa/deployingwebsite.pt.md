@@ -1,5 +1,5 @@
 ---
-title: Dar host ao Ametista na Internet
+title: Dar host ao Amethyst na internet
 weight: '"4"'
 ---
 ## Implementar?
