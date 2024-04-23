@@ -1,0 +1,15 @@
+{
+  "name": "Project Documentation",
+  "short_name": "Project Documentation",
+  "start_url": "/amethyst/",
+  "scope": "/amethyst/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "/amethyst/favicon.png",
+      "sizes": "1024x1024"
+    }
+  ]
+}
